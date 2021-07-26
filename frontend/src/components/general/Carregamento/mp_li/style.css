@@ -1,0 +1,79 @@
+.mp_wrapper {
+    width: 100%;
+    height: 100%;
+
+    background: #333F4F;
+
+    color: white;
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.mp_wrapper li {
+    transition: transform 0.2s ease-in-out;
+}
+
+.mp_wrapper li:hover {
+    transform: scale(1.01);
+}
+
+.mp_wrapper li a {
+    display: grid;
+    height: 100px;
+
+    grid-template-areas:
+    "placa info chevrom"
+    "chegada info chevrom"
+    "linha linha linha";
+
+    padding: 20px 5px 0;
+}
+
+.mp_wrapper a .placa-liberado{
+    display: flex;
+    width: 420px;
+    grid-area: placa;
+
+    justify-content: space-between;
+}
+
+.mp_wrapper a .placa-liberado >h3 {
+    font-size: 2em;
+}
+
+.mp_wrapper a .placa-liberado >button {
+    border: none;
+
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    padding: 2.5px;
+
+    margin-left: auto;
+}
+
+.mp_wrapper a .chegada {
+    grid-area: chegada;
+}
+
+.mp_wrapper a .info {
+    grid-area: info;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.mp_wrapper .chevrom {
+    grid-area: chevrom;
+}
+
+.mp_wrapper a .bottom_line{
+    width: 97%;
+    margin: 0 auto;
+    background: white;
+    margin-top: auto;
+    height: 2px;
+
+    grid-area: linha;
+}

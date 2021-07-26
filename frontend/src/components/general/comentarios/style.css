@@ -1,0 +1,72 @@
+.comentsBox-wrapper {
+    max-width: 450px;
+
+    border-radius: 10px;
+    padding: 20px 10px;
+    background: rgba(255, 255, 255, 0.4);
+
+    display: grid;
+    grid-template-areas:
+    'titulo'
+    'comentario'
+    'input';
+
+    grid-template-rows: 1fr 10fr 1fr;
+}
+
+.comentsBox-wrapper h1:first-child {
+    margin-bottom: 10px;
+    grid-area: titulo;
+}
+
+.comentsBox-wrapper ul {
+    margin-bottom: 10px;
+
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+
+    overflow: scroll;
+    overflow-x: auto;
+
+    grid-area: comentario;
+}
+
+.comentsBox-wrapper ul li:not(:first-child) {
+    margin-top: 20px;
+}
+
+.comentsBox-wrapper ul li div {
+    margin-top: 10px;
+}
+
+.comentsBox-wrapper .inputWrapper {
+    margin-top: auto;
+    align-items: center;
+
+    display: flex;
+    justify-content: space-between;
+
+    grid-area: input;
+}
+
+.comentsBox-wrapper .inputWrapper textarea {
+    border: none;
+    padding: 10px;
+    overflow: hidden;
+    resize: none;
+
+    width: 80%;
+
+    border-radius: 10px;
+}
+
+.comentsBox-wrapper .inputWrapper button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+    border: none;
+    background: #3860B2;
+    color: white;
+}

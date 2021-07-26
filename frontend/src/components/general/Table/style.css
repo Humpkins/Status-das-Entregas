@@ -1,0 +1,9 @@
+.div_wrapper {
+    height: 100%;
+}
+
+
+
+.div_wrapper ::-webkit-scrollbar-track {
+    display: none;
+}

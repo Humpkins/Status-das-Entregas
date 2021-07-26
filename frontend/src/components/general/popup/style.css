@@ -1,0 +1,54 @@
+.pop_carregamento {
+    background: rgba(0, 0, 0, 0.5);
+    height: calc(100% + 100px);
+    width: 100%;
+
+    position: fixed;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+
+    top: 0;
+    bottom: 0;
+    left:0;
+}
+
+.pop_carregamento form {
+    margin: 0 auto;
+    background: #C4C4C4;
+    border-radius: 20px;
+
+    padding: 50px 20px;
+
+    width: 30%;
+    position: fixed;
+    left: calc(50% - 15%);
+}
+
+.pop_carregamento form input {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+    border: none;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    width: 100%;
+}
+
+.pop_carregamento form .botoes {
+    margin-top: 20px;
+    display: flex;
+
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pop_carregamento form .botoes button {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+
+    border: none;
+    width: 100px;
+}

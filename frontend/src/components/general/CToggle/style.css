@@ -1,0 +1,5 @@
+.react-toggle {
+    grid-area: toggle;
+    align-self: center;
+    justify-self: center;
+}

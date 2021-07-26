@@ -1,0 +1,70 @@
+.login_wrapper {
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.login_wrapper form {
+    margin: 0 auto;
+    background: rgb(227, 241, 255);
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+    max-width: 350px;
+
+    padding: 30px  20px 10px 20px;
+    border-radius: 20px;
+
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+
+}
+
+.login_wrapper form h3 {
+    margin-bottom: 20px;
+}
+
+.login_wrapper form input {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 5px;
+
+    border: none;
+}
+
+.login_wrapper form button {
+
+    background: #3860B2;
+    color: white;
+    border: none;
+
+    padding: 3px;
+}
+
+.login_wrapper .signin_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+
+    margin-top: 5px;
+    text-decoration: none;
+
+    color: #3860B2;
+}
+
+.login_wrapper .signin_wrapper:active {
+    color: #3860B2;
+}
+
+.login_wrapper .signin_wrapper button {
+    border-radius: 0;
+    padding: 0;
+    height: auto;
+    width: auto;
+
+    background: none;
+    color: #3860B2;
+}

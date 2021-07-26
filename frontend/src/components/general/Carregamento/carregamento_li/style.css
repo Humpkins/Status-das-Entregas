@@ -1,0 +1,98 @@
+.carregamento_wrapper {
+    width: 100%;
+    height: 100%;
+
+    overflow: scroll;
+
+    background: #E3F1FF;
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.carregamento_wrapper li {
+    transition: transform 0.2s ease-in-out;
+}
+
+.carregamento_wrapper li:hover {
+    transform: scale(1.01);
+}
+
+.carregamento_wrapper li a{
+    font-weight: bolder;
+    height: 100px;
+    width: 100%;
+
+    display: grid;
+    grid-template-areas:
+    "Placa-icons info chevron"
+    "linha linha linha";
+
+    padding: 5px 5px 0;
+}
+
+.carregamento_wrapper li a .placa-icons{
+    grid-area: Placa-icons;
+    justify-content: space-between;
+
+    display: flex;
+}
+
+.carregamento_wrapper li a .placa-icons h3 {
+    font-size: 2em;
+    width: 300px;
+}
+
+.carregamento_wrapper li a .placa-icons .icons{
+    display: grid;
+    grid-template-areas:
+    "check email";
+    
+    justify-content: space-around;
+    align-items: center;
+
+    width: 110px;
+}
+
+.carregamento_wrapper li a .placa-icons .icons >button{
+    width: 35px;
+    height: 35px;
+    padding: 2.5px;
+    border-radius: 50%;
+
+    border: none;
+}
+
+.carregamento_wrapper li a .placa-icons .icons .check {
+    grid-area: check;
+}
+.carregamento_wrapper li a .placa-icons .icons .email {
+    grid-area: email;
+}
+
+.carregamento_wrapper li a > .info {
+    display: flex;
+    grid-area: info;
+}
+
+.carregamento_wrapper li a > .info div:first-child{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    width: 500px;
+}
+
+.carregamento_wrapper li a > .info div:last-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carregamento_wrapper li a > .bottom_line{
+    width: 97%;
+    margin: 0 auto;
+    background: #00126B;
+    margin-top: 5px;
+    height: 2px;
+
+    grid-area: linha;
+}

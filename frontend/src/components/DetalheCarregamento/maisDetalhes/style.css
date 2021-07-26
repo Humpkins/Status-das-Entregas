@@ -1,0 +1,23 @@
+.maisDetalhes {
+    width: 100%;
+    padding: 5px 10px 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.maisDetalhes .truck-info .info-valores {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    width: 80%;
+    padding: 10px 0;
+}
+
+.maisDetalhes .Pesos .Pesos_valor{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    width: 80%;
+    padding: 10px 0;
+}

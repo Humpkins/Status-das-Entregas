@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #D0E8FF;
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea {
+    font: 400 18px 'Open Sans', sans-serif;
+}
+
+button {
+    cursor: pointer;
+    transition: filter 0.2s;
+    border-radius: 100px;
+    background: #3860B2;
+}
+
+button:hover{
+    filter: brightness(90%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Scroll style */
+  
+  /* Track */
+  *::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+/* width */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+  /* Handle */
+  *::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.carregando {
+    padding-top: 15%;
+    text-align: center;
+}
+
+.MuiAlert-root {
+  margin: 10px auto 0;
+  width: 80%;
+}
+
+.MuiAlert-root button {
+  background: none;
+}
+
+button:disabled:hover,
+button[disabled]:hover{
+    filter: brightness(100%);
+}
+
+button:disabled,
+button[disabled]{
+    transition: none;
+    cursor: default;
+    background: gray;
+}

@@ -1,0 +1,117 @@
+.info-box button {
+    padding: 15px 5px;
+    width: 30%;
+
+    min-width: 100px;
+    border: none;
+    background: #3860B2;
+    color: white;
+}
+
+.info-box {
+    width: 710px;
+    border-radius: 20px;
+
+    padding: 20px;
+    margin: 100px auto 30px;
+
+    background: rgba(255, 255, 255, 40%);
+}
+
+.info-box .box-header {
+    display: grid;
+    grid-template-areas: "botoes toggle dropdown";
+    grid-template-columns: 1fr 124px 1fr;
+
+    align-items: center;
+}
+
+.info-box .box-header button {
+    min-height: 35px;
+    font-size: 12px;
+}
+
+.info-box .box-header #status{
+    width: 50%;
+    height: 35px;
+    margin: 0;
+}
+
+.info-box .truck-info {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-box .truck-info div:not(:first-child):not(.direita) {
+    margin-top: 30px;
+}
+
+.info-box .truck-info .direita {
+    margin-left: auto;
+}
+
+.info-header div {
+    height: 1px;
+    width: calc(100% - 100px);
+    background: black;
+    margin-left: auto;
+}
+
+.Pesos .info-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-box .Pesos .Pesos_valor {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0
+}
+
+.info-box .Pesos .Pesos_valor div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box .materiais .ul_material li{
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 20px;
+    background: #C4C4C4;
+
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+.info-box .materiais .ul_material .li-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-box .materiais .ul_material .li-remain {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-box .materiais .ul_material .li-remain div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box .eventos  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-box .eventos  ul li {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

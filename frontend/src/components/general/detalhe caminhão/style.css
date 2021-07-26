@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+.detalhe_wrapper_2 {
+    background: rgba(255, 255, 255, 0.4);
+    width: 300px;
+    overflow-y: hidden;
+
+    /* max-height: 285px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px 10px;
+    border-radius: 10px;
+
+    
+    font: 400 12px 'Open Sans', sans-serif;
+
+}
+
+.detalhe_wrapper_2 .prioridade {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    background: #3860B2;
+    color: white;
+    text-align: center;
+    align-items: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+}
+
+.detalhe_wrapper_2 .dados {
+    width: 100%;
+    height: 80%;
+
+    overflow: scroll;
+    overflow-x: hidden;
+
+    border-radius: 10px;
+    padding: 5px;
+
+    margin-top: 5px;
+}
+
+.detalhe_wrapper_2 .dados li {
+    display: grid;
+
+    background: #C4C4C4;
+    border-radius: 20px;
+
+    padding: 10px;
+
+    grid-template-areas:
+    "cliente obra"
+    "endereco endereco";
+
+    transition: transform 0.2s;
+
+    cursor: pointer;
+}
+
+.detalhe_wrapper_2 .dados li:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.detalhe_wrapper_2 .dados li:hover {
+    transform: scale(1.02);
+    
+    -webkit-box-shadow: 8px 3px 7px 3px rgba(0,0,0,0.32);
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%)
+}
+
+.scale_down {
+    transform: scale(0);
+}
+
+.detalhe_wrapper_2 .dados li .cliente {
+    grid-area: cliente;
+}
+
+.detalhe_wrapper_2 .dados li .n_obra {
+    grid-area: obra;
+    margin-left: auto;
+}
+
+.detalhe_wrapper_2 .dados li .endereco {
+    grid-area: endereco;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    margin-top: 10px;
+}
+
+.detalhe_wrapper_2 ::-webkit-scrollbar-track {
+    display: none;
+}

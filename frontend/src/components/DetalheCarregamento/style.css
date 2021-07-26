@@ -1,0 +1,64 @@
+.detalhe_wrapper .inputs {
+
+    display:grid;
+    grid-template-areas:
+    "placa dropdown toggle atualizar";
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    padding: 25px 7px 10px;
+
+    
+    background: #E3F1FF;
+    border-radius: 0 0 20px 20px;
+}
+
+.detalhe_wrapper .inputs .input_placa {
+    padding-left: 30px;
+}
+
+.detalhe_wrapper .inputs .input_placa input {
+    padding: 5px 30px 5px 0;
+    height: 30px;
+
+}
+
+.detalhe_wrapper .inputs .input_placa svg {
+    position: relative;
+    z-index: 1;
+    right: 30px;
+    top: 5px;
+}
+
+.detalhe_wrapper .inputs select {
+    grid-area: others;
+    width: 300px;
+    height: 30px;
+    
+    font: 400 18px 'Open Sans', sans-serif;
+
+    align-self: center;
+}
+
+.detalhe_wrapper .imagem {
+    margin-top: 30px;
+    height: 60vh;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.detalhe_wrapper form button{
+
+    width: 250px;
+    height: 38.5px;
+
+    padding: 5px;
+    border: none;
+    color: white;
+}
+
+.detalhe_wrapper .comentsBox-wrapper {
+    width: 300px;
+}
